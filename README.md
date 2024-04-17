@@ -40,11 +40,25 @@
 
 isal support for aiohttp
 
+zlib is be a bottleneck for aiohttp, especially for websocket connections. `aiohttp-isal` replaces usage of `zlib` in `aiohttp` with `isal` which is a drop-in faster replacement in most cases. Be sure to read the [isal](https://github.com/pycompression/python-isal) documentation.
+
 ## Installation
 
 Install this via pip (or your favourite package manager):
 
 `pip install aiohttp-isal`
+
+## Usage
+
+Enable [isal](https://github.com/pycompression/python-isal) support in aiohttp by calling `enable_isal`
+
+```python
+
+import aiohttp_isal
+
+aiohttp_isal.enable_isal()
+aiohttp_isal.disable_isal()
+```
 
 ## Contributors ✨
 
