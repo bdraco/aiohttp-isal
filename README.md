@@ -50,7 +50,7 @@ Install this via pip (or your favourite package manager):
 
 ## Usage
 
-Enable [isal](https://github.com/pycompression/isal) support in aiohttp by calling `enable_isal`
+Enable [isal](https://github.com/pycompression/python-isal) support in aiohttp by calling `enable_isal`
 
 ```python
 
