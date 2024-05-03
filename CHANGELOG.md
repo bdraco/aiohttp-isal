@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.1 (2024-05-03)
+
+### Fix
+
+- Limit isal to linux/win32/darwin (#4) ([`656f86f`](https://github.com/bdraco/aiohttp-isal/commit/656f86f5c8a6e34083317120f930bc75da80d9b5))
+
 ## v0.3.0 (2024-05-03)
 
 ### Feature
