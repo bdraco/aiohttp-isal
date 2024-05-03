@@ -25,7 +25,11 @@ packages = [
 [tool.poetry.dependencies]
 python = "^3.8"
 aiohttp = ">=3.9.0"
-isal = ">=1.6.1"
+isal = [
+   { version = ">=1.6.1", platform = "linux" },
+   { version = ">=1.6.1", platform = "darwin" },
+   { version = ">=1.6.1", platform = "win32" }
+]
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.0"
