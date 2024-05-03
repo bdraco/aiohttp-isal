@@ -1,10 +1,19 @@
 __version__ = "0.2.0"
 
 import importlib
+import logging
 import zlib as zlib_original
 
 import aiohttp
-from isal import isal_zlib as best_zlib
+
+try:
+    from isal import isal_zlib as best_zlib
+
+    ISAL_AVAILABLE = True
+except ImportError:
+    ISAL_AVAILABLE = False
+
+_LOGGER = logging.getLogger(__name__)
 
 TARGETS = (
     "compression_utils",
@@ -19,6 +28,12 @@ TARGETS = (
 
 def enable_isal() -> None:
     """Enable isal."""
+    if not ISAL_AVAILABLE:
+        _LOGGER.warning(
+            "isal is not available, falling back to zlib, performance will be degraded."
+        )
+        return
+
     for location in TARGETS:
         try:
             importlib.import_module(f"aiohttp.{location}")
