@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.0 (2024-05-03)
+
+### Feature
+
+- Fallback to zlib when isal cannot be imported (#3) ([`901d553`](https://github.com/bdraco/aiohttp-isal/commit/901d553ccd5844037d8e05a26c216fa21b4f8ad3))
+
 ## v0.2.0 (2024-04-17)
 
 ### Feature
