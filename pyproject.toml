@@ -3,7 +3,6 @@ name = "aiohttp-isal"
 version = "0.3.1"
 description = "isal support for aiohttp"
 authors = ["J. Nick Koston <nick@koston.org>"]
-license = "Apache Software License 2.0"
 readme = "README.md"
 repository = "https://github.com/bdraco/aiohttp-isal"
 documentation = "https://aiohttp-isal.readthedocs.io"
@@ -13,6 +12,7 @@ classifiers = [
     "Natural Language :: English",
     "Operating System :: OS Independent",
     "Topic :: Software Development :: Libraries",
+    "License :: OSI Approved :: Apache Software License",
 ]
 packages = [
     { include = "aiohttp_isal", from = "src" },
