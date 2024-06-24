@@ -1,5 +1,11 @@
 # Changelog
 
+## v0.3.2 (2024-06-24)
+
+### Fix
+
+- Fix license classifier (#5) ([`63708dd`](https://github.com/bdraco/aiohttp-isal/commit/63708dd77c4593fb294da602283b913f7d7c6742))
+
 ## v0.3.1 (2024-05-03)
 
 ### Fix

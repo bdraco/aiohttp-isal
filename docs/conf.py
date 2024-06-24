@@ -7,7 +7,7 @@
 project = "aiohttp-isal"
 copyright = "2024, J. Nick Koston"
 author = "J. Nick Koston"
-release = "0.3.1"
+release = "0.3.2"
 
 # General configuration
 extensions = [
