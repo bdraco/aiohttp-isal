@@ -38,6 +38,8 @@
 
 ---
 
+# This library is obsolete and replaced by https://github.com/bdraco/aiohttp-fast-zlib
+
 isal support for aiohttp
 
 zlib is be a bottleneck for aiohttp, especially for websocket connections. `aiohttp-isal` replaces usage of `zlib` in `aiohttp` with `isal` which is a drop-in faster replacement in most cases. Be sure to read the [isal](https://github.com/pycompression/python-isal) documentation.
